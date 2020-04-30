@@ -1,0 +1,24 @@
+#!/bin/bash
+# James Shubin, 2018
+# run `make` in the first directory (or its parent recursively) that it works in
+
+MF='Makefile'	# looks for this file, could look for others, but that's silly
+CWD=$(pwd)	# starting here
+
+while true; do
+	if [ -e "$MF" ]; then
+		make $@		# run make!
+		e=$?
+		cd "$CWD"	# go home first
+		exit $e		# pass on the exit status
+	fi
+
+	# stop if we get home
+	if [ "$(pwd)" = "$HOME" ]; then
+		cd "$CWD"
+		exit 2		# the exit status of `make` when it errors
+	fi
+
+	#echo "searching..."
+	cd ..			# go up one dir
+done

@@ -1,0 +1,35 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+    fuzzyMatch: true
+    helmDirSwitch: true
+  "atom-idle-autosave":
+    debounce: 1000
+  autosave:
+    enabled: true
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "welcome"
+      "autosave"
+      "atom-idle-autosave"
+      "background-tips"
+    ]
+    projectHome: "/Users/uldis/git"
+    telemetryConsent: "no"
+  "cursor-history": {}
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "16fa58e8-7cea-fdcb-0886-67131f22ddda"
+  "linter-shellcheck":
+    enableNotice: true
+  "linter-ui-default":
+    showPanel: true
+  "markdown-preview":
+    useGitHubStyle: true
+  "tree-view": {}
+  "vim-mode-plus": {}
+  welcome:
+    showOnStartup: false

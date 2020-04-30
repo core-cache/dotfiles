@@ -1,0 +1,129 @@
+snippet const
+	const ${1} = ${0}
+snippet c
+	const ${1} = ${0}
+snippet let
+	let ${1} = ${0}
+snippet im "import xyz from 'xyz'"
+	import ${1} from '${2:$1}'
+snippet imm "import { member } from 'xyz'"
+	import { ${1} } from '${2}'
+snippet c=>
+	const ${1} = (${2}) => {
+		${0:${VISUAL}}
+snippet caf
+	const ${1} = (${2}) => ${0:${VISUAL}}
+snippet cafm
+	const ${1} = (${2}) => {
+		${0:${VISUAL}}
+snippet =>
+	(${1}) => {
+		${0:${VISUAL}}
+snippet af
+	(${1}) => {
+		${0:${VISUAL}}
+snippet re
+	const ${1} = require('${0}
+snippet rem
+	const {${1}} = require('${0}
+snippet me
+	module.exports = ${1}
+
+# Scripts
+snippet #!
+	#!/usr/bin/env node
+
+# Operations
+snippet foro "for (const p of o}) { ... }"
+	for (const ${1:p} of ${2:obj}) {
+		${0}
+snippet forin "for (const idx in arr}) { ... }"
+	for (const ${1:idx} of ${2:arr}) {
+		${0}
+snippet fori "for (let i = 0; i < arr.length; i++) { ... }"
+	for (let i = 0; i < ${1:arr}; i++) {
+		${0}
+snippet ter
+	${1}
+		? ${2}
+		: ${0}
+
+# JSON
+snippet jsonp
+	JSON.parse(${0}
+snippet jsons
+	JSON.stringify(${0}
+
+# Comments
+snippet cm
+	/*
+	${0}
+	*/
+
+# Debugging
+snippet de
+	debugger
+snippet cl "console.log"
+	console.log(${0}
+snippet clo "console.log"
+	console.log({${1}})${0}
+snippet cll "console.log"
+	console.log('**************************************************')
+	console.log(${0})
+	console.log('**************************************************')
+snippet ce "console.error"
+	console.error(${0}
+
+# Strings
+snippet tos "toString"
+	toString()
+
+# Testing
+snippet t "Jest Test"
+	test('${1}', () => {
+		${0:${VISUAL}}
+	})
+snippet ta "Jest Async Test"
+	test('${1}', async () => {
+		${0:${VISUAL}}
+	})
+snippet to "Jest Test Only"
+	test.only('${1}', () => {
+		${0:${VISUAL}}
+	})
+snippet ts "Jest Test Solve"
+	test('solve', () => {
+		expect(solve(${1})).toEqual(${2})${0}
+	})
+snippet etb "Expect to be"
+	expect(${1}).toBe(${2})
+snippet ete "Expect to equal"
+	expect(${1}).toEqual(${2})
+snippet desc "Mocha describe"
+	describe('${1}', () => {
+		${0:${VISUAL}}
+snippet it "Mocha it"
+	it('${1}', () => {
+		${0:${VISUAL}}
+
+# Classes
+snippet ctor
+	constructor(${1}) {
+		${0}
+	}
+
+# One-liners
+snippet isUndef
+	const isUndefined = x => typeof x === 'undefined'
+snippet isNil
+	const isNil = x => x == null
+snippet clone
+	const clone = x => JSON.parse(JSON.stringify(x))
+snippet defaultTo
+	const defaultTo = (x, o) => o == null ? x : o
+snippet o
+	{
+		${0}
+	}
+snippet p
+	${1}: ${2},${0}

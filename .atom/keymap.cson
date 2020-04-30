@@ -1,0 +1,28 @@
+'atom-workspace':
+  'ctrl-i':     'cursor-history:next'
+  'ctrl-o':     'cursor-history:prev'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'j j': 'vim-mode-plus:activate-normal-mode'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'g f':      'open-this:here'
+  'ctrl-w f': 'open-this:split-down'
+  'ctrl-w F': 'open-this:split-right'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+'.markdown-preview':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+# For tree-view
+'.tree-view':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+# Map '-', so that I can focus last-focused element by typing `-` twice.
+'atom-text-editor#choose-pane-editor':
+  '-': 'choose-pane:last-focused'
