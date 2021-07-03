@@ -81,18 +81,12 @@ Plugin 'thinca/vim-localrc'
 Plugin 'rakr/vim-one'
 Plugin 'chriskempson/base16-vim'
 
-" metrics
-Plugin 'wakatime/vim-wakatime'
-
 " repl
 Plugin 'jpalardy/vim-slime'
 
 " status
 Plugin 'itchyny/lightline.vim'
 Plugin 'maximbaz/lightline-ale'
-
-" crazies
-Plugin 'ashisha/image.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -103,6 +97,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
+" cursor
+set cursorline
 
 " quirks
 set backspace=2 " make backspace work like most other apps

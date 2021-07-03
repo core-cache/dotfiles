@@ -1,12 +1,12 @@
 [author]
-  email = sukhvinders.src@gmail.com
+  email = xxxxx@gmail.com
 [user]
   name = Sukhvinder Singh
-  email = sukhvinders.src@gmail.com
+  email = xxxxx@gmail.com
 [push]
   default = current
 [core]
-  excludesfile = /Users/uldis/.gitignore_global
+  excludesfile = /Users/sukhvinders/.gitignore_global
   pager = diff-so-fancy | less --tabs=4 -RFX
 [difftool "vimdiff"]
 [mergetool "vimdiff"]

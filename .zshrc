@@ -29,7 +29,7 @@ bindkey '^x^e' edit-command-line
 
 plugins=(
   ssh-agent \
-  git git_remote_branch \
+  git \
   vi-mode \
   web-search \
   autojump \
@@ -41,7 +41,8 @@ plugins=(
   nvm \
   fzf \
   node \
-  yarn
+  yarn \
+  python
   # timer \
 )
 
@@ -76,3 +77,7 @@ alias stack > /dev/null && unalias stack
 # load ~/.zshrc.local
 [[ -s $HOME/.zshrc.local ]] && source "$HOME/.zshrc.local"
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

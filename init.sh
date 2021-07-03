@@ -81,3 +81,6 @@ ln -sf $DOTFILES_SRC/.ignore ~/
 
 # global mysql config file
 ln -sf $DOTFILES_SRC/.my.cnf ~/
+
+# python
+ln -sf $DOTFILES_SRC/config/pycodestyle ~/.config/pycodestyle

@@ -14,6 +14,10 @@ alias pm='pmake --jobs 5'
 
 alias ag='ag --path-to-ignore ~/.ignore'
 
+# programming
+
+alias py='python'
+
 function light() {
   if [ -z "$2" ]
   then
